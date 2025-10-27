@@ -7,8 +7,8 @@ import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 
 const DUMMY_USER = {
-  email: process.env.LOGIN_EMAIL,
-  password: process.env.LOGIN_PASSWORD
+  email: process.env.NEXT_PUBLIC_LOGIN_EMAIL,
+  password: process.env.NEXT_PUBLIC_LOGIN_PASSWORD
 };
 
 export default function LoginPage() {
@@ -29,20 +29,20 @@ export default function LoginPage() {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-50">
       <div className="bg-white p-8 rounded-xl shadow-md w-full max-w-sm">
-        <h1 className="text-xl font-bold mb-4">تسجيل الدخول</h1>
+        <h1 className="text-xl font-bold mb-4 text-black">تسجيل الدخول</h1>
         <Input
           type="email"
           placeholder="الإيميل"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="mb-3"
+          className="mb-3 text-black placeholder:text-black"
         />
         <Input
           type="password"
           placeholder="كلمة المرور"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="mb-4"
+          className="mb-4 text-black placeholder:text-black"
         />
         <Button onClick={handleLogin} className="w-full">دخول</Button>
       </div>
