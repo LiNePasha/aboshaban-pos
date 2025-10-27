@@ -716,7 +716,7 @@ function ProductCard({ p }: { p: WCProduct }) {
                       نوع الخصم
                     </label>
                     <select
-                      className="w-full border rounded p-2 bg-white"
+                      className="w-full border border-black rounded p-2 bg-white"
                       value={discountType}
                       onChange={(e) =>
                         setDiscountType(e.target.value as "fixed" | "percent")
@@ -805,7 +805,7 @@ function ProductCard({ p }: { p: WCProduct }) {
                       حالة الطلب
                     </label>
                     <select
-                      className="w-full border rounded p-2 bg-white"
+                      className="w-full border border-black rounded p-2 bg-white"
                       value={orderStatus}
                       onChange={(e) => setOrderStatus(e.target.value as any)}
                     >

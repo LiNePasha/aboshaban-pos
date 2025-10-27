@@ -175,7 +175,7 @@ export default function AdvancedCustomerSelect({
               ) : (
                 <input
                   ref={inputRef}
-                  className="w-full border rounded p-2"
+                  className="w-full border border-black rounded p-2"
                   placeholder={placeholder}
                   value={query}
                   onChange={(e) => {
